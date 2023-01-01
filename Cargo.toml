@@ -1,0 +1,14 @@
+[package]
+name = "battery-notification"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.68"
+notify-rust = "4.6.0"
+tokio = { version = "1.23.0", features = ["full"] }
+tokio-stream = "0.1.11"
+upower_dbus = { git = "https://github.com/carpinchomug/upower-dbus", branch = "warning-level" }
+zbus = "3.6.2"
